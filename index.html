@@ -1,12 +1,12 @@
 <!-- Unit 12 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
-[  ] Standard Animation
-[  ] Custom Animation
-[  ] Include Three Images
+[yes] Two Interactive Drop-down Inputs 
+[yes] Standard Animation
+[yes] Custom Animation
+[yes] Include Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
+[yes] Feature 1 - Google Font
 [ no ] Feature 2 - Chain jQuery Methods
 [ no ] Feature 3 - .mouseover() & .mouseOut() Methods
 [ no ] Feature 4 - :hover Feature 
@@ -17,44 +17,119 @@ Select ONE Additional Feature to Add
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Unit 12 Project</title>
+    <title>How Well Do You Know Theo?</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+     <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>How Well Do You Know Theo?</h1>
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
         🎥 What is my favorite movie?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">The Boy and the Heron</option>
+          <option value="movie2">Lady Bird</option>
+          <option value="movie3">Little Women</option>
+          <option value="movie4">Everything Everywhere All at Once</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
     </form>
-    <div id="movie-result">
+    <div id="movie-result" style="display:none;">
       <p id="movie-text"></p>
+      <img id="coraline-img" src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/192/2023/10/06110031/zbMRm6P6wPe9SQ6qJ7ZTAvCMS6e-scaled.jpg" style="display:none;" />
     </div>
     <hr />
-    <!-- Book Question -->
-    <form id="book-form">
+    <!-- Show Question -->
+    <form id="show-form">
       <label>
-        📖 What is my favorite book?
-        <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+        📺 What is my favorite show?
+        <select id="show-answer">
+          <option value="show1">The Last of Us</option>
+          <option value="show2">Don't Hug Me I'm Scared</option>
+          <option value="show3">Stranger Things</option>
+          <option value="show4">Derry Girls</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">Check Show Answer</button>
     </form>
-    <div id="book-result">
-      <p id="book-text"></p>
+    <div id="show-result" style="display:none;">
+      <p id="show-text"></p>
+      <img id="yellowjackets-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/DHMIS_poster.png/250px-DHMIS_poster.png" style="display:none;">
+    </div>
+  <hr />
+    <!-- Color Question -->
+    <form id="color-form">
+      <label>
+        🎨 What is my favorite color?
+        <select id="color-answer">
+          <option value="color1">Blue</option>
+          <option value="color2">Pink</option>
+          <option value="color3">Yellow</option>
+          <option value="color4">Purple</option>
+        </select>
+      </label>
+      <button type="submit">Check Color Answer</button>
+    </form>
+    <div id="color-result" style="display:none;">
+      <p id="color-text"></p>
+      <img id="green-img" src="https://t4.ftcdn.net/jpg/03/17/52/15/360_F_317521596_0SZ4gQtPYPaaDKf7wAJxSguF2hB8uGHk.jpg" style="display:none;">
+    </div>
+    <hr />
+    <!-- Song Question -->
+    <form id="song-form">
+      <label>
+        🎵 What is my favorite song?
+        <select id="song-answer">
+          <option value="song1">Waiting Room</option>
+          <option value="song2">Not</option>
+          <option value="song3">Haunted</option>
+          <option value="song4">Paperback</option>
+        </select>
+      </label>
+      <button type="submit">Check Song Answer</button>
+    </form>
+    <div id="song-result" style="display:none;">
+      <p id="song-text"></p>
+      <img id="losingdogs-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Laura_Les_-_Haunted.jpg/250px-Laura_Les_-_Haunted.jpg" style="display:none;" />
+    </div>
+    <hr />
+    <!-- Season Question -->
+    <form id="season-form">
+      <label>
+        📅 What is my favorite season?
+        <select id="season-answer">
+          <option value="season1">Spring</option>
+          <option value="season2">Summer</option>
+          <option value="season3">Autumn</option>
+          <option value="season4">Winter</option>
+        </select>
+      </label>
+      <button type="submit">Check Season Answer</button>
+    </form>
+    <div id="season-result" style="display:none;">
+      <p id="season-text"></p>
+      <img id="autumn-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8PJNox1RkySCCobVdMj-TQevbZZa3SSVq4Q&s" style="display:none;">
+    </div>
+        <hr />
+    <!-- Animal Question -->
+    <form id="animal-form">
+      <label>
+        🐾 What is my favorite animal?
+        <select id="animal-answer">
+          <option value="animal1">Dragonfly</option>
+          <option value="animal2">Ladybug</option>
+          <option value="animal3">Bat</option>
+          <option value="animal4">Cat</option>
+        </select>
+      </label>
+      <button type="submit">Check Animal Answer</button>
+    </form>
+    <div id="animal-result" style="opacity:0;">
+      <p id="animal-text"></p>
+      <img id="dragonfly-img" src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_16x9.jpg?w=1200" style="display:none;">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -66,29 +141,107 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
+        $("#movie-result").hide();
+        $("#coraline-img").hide();
         if (answer === "movie1") {
-          $("#movie-text").text("YESSSS!");
+          $("#movie-text").text("Correct!");
+          $("#coraline-img").show();
         } 
         else {
           $("#movie-text").text("Try Again!");
         }
+        $("#movie-result").slideDown(1000);
       });
 
-      //=======================Book Question jQuery Code
-      $("#book-form").on("submit", function (event) {
+      //=======================Show Question jQuery Code
+      $("#show-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#book-answer");
+        var $answer = $("#show-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-text").text("YESSSS!");
-        } 
-        else {
-          $("#book-text").text("Try Again!");
-        }
+        $("#show-result").hide();
+        $("#yellowjackets-img").hide();
+        if (answer === "show2") {
+          $("#show-text").text("Correct!");
+          $("#yellowjackets-img").show();
+        } else {
+          $("#show-text").text("Try Again!");
+        }  
+          $("#show-result").fadeIn(1000);
       });
       
+            //=======================Color Question jQuery Code
+      $("#color-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#color-answer");
+        var answer = $answer.val();
+
+        $("#color-result").hide();
+        $("#green-img").hide();
+        if (answer === "color1") {
+          $("#color-text").text("Correct!");
+          $("#green-img").show();
+        } else {
+          $("#color-text").text("Try Again!");
+        }  
+          $("#color-result").slideDown(1000);
+      });
+
+            //=======================Song Question jQuery Code
+      $("#song-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#song-answer");
+        var answer = $answer.val();
+
+        $("#song-result").hide();
+        $("#losingdogs-img").hide();
+        if (answer === "song3") {
+          $("#song-text").text("Correct!");
+          $("#losingdogs-img").show();
+        } else {
+          $("#song-text").text("Try Again!");
+        }  
+          $("#song-result").slideDown(1000);
+      });
+      
+                  //=======================Season Question jQuery Code
+      $("#season-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#season-answer");
+        var answer = $answer.val();
+
+        $("#season-result").hide();
+        $("#autumn-img").hide();
+        if (answer === "season3") {
+          $("#season-text").text("Correct!");
+          $("#autumn-img").show();
+        } else {
+          $("#season-text").text("Try Again!");
+        }  
+          $("#season-result").fadeIn(1000);
+      });
+
+                  //=======================Animal Question jQuery Code
+      $("#animal-form").on("submit", function (event) {
+        event.preventDefault();
+
+        var $answer = $("#animal-answer");
+        var answer = $answer.val();
+
+        $("#animal-result").css("opacity", 0);
+        $("#dragonfly-img").hide();
+        if (answer === "animal4") {
+          $("#animal-text").text("Correct!");
+          $("#dragonfly-img").show();
+        } else {
+          $("#animal-text").text("Try Again!");
+        }  
+          $("#animal-result").animate({opacity: 1}, 1000);
+      });
     </script>
   </body>
 

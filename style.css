@@ -1,5 +1,12 @@
+body {
+  font-family: 'Niconne', cursive;
+  color: rgb(0, 10, 101);
+  background-image: url('https://www.springscreative.com/cdn/shop/files/tiled_preview_square_20251015_145426_80b6b5f6-451b-4072-94fd-2afad617302d.png?v=1766414136&width=2048');
+  background-size: cover;
+}
+
 #movie-result {
-  background: rgb(244, 98, 181);
+  background: rgba(255, 255, 255, 0.6);
   border: 5px solid black;
   font-size: 24px;
   min-height: 160px;
@@ -7,8 +14,8 @@
   margin-bottom: 20px;
 }
 
-#book-result {
-  background: rgb(196, 159, 255);
+#show-result {
+  background: rgba(255, 255, 255, 0.6);
   border: 5px solid black;
   font-size: 24px;
   min-height: 160px;
@@ -19,4 +26,68 @@
 hr {
   height: 5px;
   background-color: black;
+}
+
+#color-result {
+  background: rgba(255, 255, 255, 0.6);
+  border: 5px solid black;
+  font-size: 24px;
+  min-height: 160px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#song-result {
+  background: rgba(255, 255, 255, 0.6);
+  border: 5px solid black;
+  font-size: 24px;
+  min-height: 160px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#season-result {
+  background: rgba(255, 255, 255, 0.6);
+  border: 5px solid black;
+  font-size: 24px;
+  min-height: 160px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#animal-result {
+  background: rgba(255, 255, 255, 0.6);
+  border: 5px solid black;
+  font-size: 24px;
+  min-height: 160px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    color: rgb(0, 10, 101);
+}
+
+img{
+    width: 450px;
+    margin-top: 10px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgb(0, 10, 101);
+    color: rgb(0, 10, 101);
+    font-family: 'Niconne', cursive; 
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+label {
+  font-size: 28px;
+}
+
+select {
+  font-size: 20px;
 }
